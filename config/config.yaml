@@ -62,8 +62,8 @@ apple_music_api_base_url: "https://amp-api.music.apple.com/v1/catalog"  # API基
 storefront_language_map:
   cn: zh-Hans-CN                     # 中国区语言代码
 token_validity_hours: 120            # Token有效期(小时)
-token_fetch_url: "https://beta.music.apple.com"  # Token获取URL
-token_fetch_js_regex: '/assets/index-legacy-[^/]+\.js'  # JS文件匹配正则
+token_fetch_url: "https://music.apple.com"  # Token获取URL
+token_fetch_js_regex: '/assets/index-[^/]+\.js'  # JS文件匹配正则
 token_fetch_token_regex: '"(eyJh[^"]*)"'         # Token匹配正则
 user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"  # 用户代理
 token_background_refresh_interval_seconds: 900 # 每15分钟检查一次
@@ -79,7 +79,7 @@ search_cache:
 
 # --- 编译配置 ---
 trigger_compile_on_startup: false  # 是否在启动时触发远程编译
-compile_server_url: "http://192.168.3.42:25001/compile_upload"  # 编译服务器URL
+compile_server_url: "http://compile_server_url/compile_upload"  # 编译服务器URL
 go_source_dir: "go"               # Go源码目录
 compiled_binary_output_dir: "bin" # 编译输出目录
 compiled_binary_name: "main"      # 编译输出文件名

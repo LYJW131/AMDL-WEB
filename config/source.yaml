@@ -15,19 +15,9 @@ alac-save-folder: /data/download/{user}
 atmos-save-folder: /data/download/{user}/atmos
 max-memory-limit: 4096 # MB
 decrypt-m3u8-port: 
-  - "192.168.3.42:30020"
-  # - "192.168.3.42:10020"
-  # - "192.168.3.42:10021"
-  # - "192.168.3.42:10022"
-  # - "192.168.3.42:10023"
-  # - "192.168.3.42:10024"
+  - "wrapper_url:30020"
 get-m3u8-port:
-  - "192.168.3.42:40020"
-  # - "192.168.3.42:20020"
-  # - "192.168.3.42:20021"
-  # - "192.168.3.42:20022"
-  # - "192.168.3.42:20023"
-  # - "192.168.3.42:20024"
+  - "wrapper_url:40020"
 get-m3u8-from-device: true
 #set 'all' to retrieve all m3u8, and set 'hires' to only detect hires m3u8.
 get-m3u8-mode: hires # all hires

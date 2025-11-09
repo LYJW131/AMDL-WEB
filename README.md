@@ -191,3 +191,7 @@ Python 部分与 Go 部分的交互是本项目的关键之一。由于 Go 模�
     * Python 监控进程解析结果。
     * 如果成功，可能会更新任务状态，将结果存入数据库或文件，并通过 `notifications.py` 发送完成通知。
     * 如果失败，记录错误到 `logs.log`，并可能发送错误通知。
+
+## 6. 配置
+
+你需要修改 `config/source.yaml` 中的获取/解密服务器地址来连接至你的 AMDL Wrapper
